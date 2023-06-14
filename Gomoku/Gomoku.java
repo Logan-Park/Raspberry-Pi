@@ -5,7 +5,8 @@ public class Gomoku {
 	String playerTwo;
 
 	Gomoku instance = null;
-
+	
+	int gameState = 1; //1 == Game On, 0 == No Game
 	GomokuBoard board;
 
 	private Gomoku(String playerOne, String playerTwo) {
@@ -17,6 +18,7 @@ public class Gomoku {
 	
 	}
 	public static void main(String[] args) {
+
 		Scanner input = new Scanner(System.in);
 		String temp1 = "";
 		String temp2 = "";
